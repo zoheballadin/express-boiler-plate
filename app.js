@@ -3,7 +3,7 @@ import './utils/db.js';
 import express from 'express';
 import userRouter from './controllers/userRouter.js';
 
-const port = 5001;
+const port = process.env.PORT;
 const app = express();
 
 app.use(express.json());
